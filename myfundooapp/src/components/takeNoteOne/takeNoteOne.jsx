@@ -21,7 +21,7 @@ function TakeNoteOne(props) {
         width: "30rem",
         height: "6vh",
         position: "relative",
-        left: "400px",
+        left: "300px",
         top: "1px",
         borderRadius: "10px",
         backgroundColor: "#f1f3f4",

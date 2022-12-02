@@ -1,20 +1,25 @@
 import axios from "axios";
 
 const headerConfig = {
-    headers : {
-        Authorization : `Bearer ${localStorage.getItem('token')}`
-    }
-}
-
+  headers: {
+    Authorization: `Bearer ${localStorage.getItem("token")}`,
+  },
+};
 export const getNotes = () => {
-    let response = axios.get('https://localhost:44347/api/Notes/GetAll',headerConfig)
-    return response;
-}
-
+  let response = axios.get(
+    "https://localhost:44347/api/Notes/GetAll",
+    headerConfig
+  );
+  return response;
+};
 export const addNote = (noteModel) => {
-    let response = axios.post('https://localhost:44347/api/Notes/Create',noteModel,headerConfig)
-    return response;
-}
+  let response = axios.post(
+    "https://localhost:44347/api/Notes/Create",
+    noteModel,
+    headerConfig
+  );
+  return response;
+};
 
 // https://localhost:44347/api/Notes/Archive
 // https://localhost:44347/api/Notes/Update
